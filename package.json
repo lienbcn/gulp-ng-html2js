@@ -1,5 +1,5 @@
 {
-  "name": "gulp-ng-html2js",
+  "name": "gulp-ng-html2js-lienbcn",
   "version": "0.2.1",
   "description": "A Gulp plugin which generates AngularJS modules, which pre-load your HTML code into the $templateCache. This way AngularJS doesn't need to request the actual HTML files anymore.",
   "keywords": [
@@ -9,17 +9,17 @@
     "html2js",
     "angularjs"
   ],
-  "homepage": "https://github.com/marklagendijk/gulp-ng-html2js",
+  "homepage": "https://github.com/lienbcn/gulp-ng-html2js",
   "bugs": "https://github.com/marklagendijk/gulp-ng-html2js/issues",
   "author": {
-    "name": "Mark Lagendijk",
-    "email": "mark@lagendijk.info",
-    "url": "https://github.com/marklagendijk"
+    "name": "Nil Sanz",
+    "email": "nsblenin@gmail.com",
+    "url": "https://github.com/lienbcn"
   },
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/marklagendijk/gulp-ng-html2js.git"
+    "url": "https://github.com/lienbcn/gulp-ng-html2js"
   },
   "scripts": {
     "test": "mocha"
