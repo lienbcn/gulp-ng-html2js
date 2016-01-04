@@ -127,7 +127,17 @@ module.exports = function (options) {
         }
     }
 
+    /**
+     * In case an html file has invalid line breaks like "\r", it can give problems when parsing the javascript
+     */
+    function fixLineBreaks(text){
+        return text
+            .replace(/\r\n/g, "\n")
+            .replace(/\r/g, "\n");
+    }
+
     function getEscapedTemplateContent(templateContent) {
+        templateContent = fixLineBreaks(templateContent);
         return templateContent
             .replace(/\\/g, "\\\\")
             .replace(/'/g, "\\'")
@@ -135,6 +145,7 @@ module.exports = function (options) {
     }
 
     function getPrettyEscapedContent(templateContent) {
+        templateContent = fixLineBreaks(templateContent);
         return templateContent
             .replace(/\\/g, "\\\\")
             .replace(/'/g, "\\'")
